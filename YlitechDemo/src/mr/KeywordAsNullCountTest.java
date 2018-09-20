@@ -18,7 +18,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
  * 部分关键词为空，查询非空记录条数
  * input:hdfs://192.168.1.129/ylitech_demo/mr/replaceString_output/
  * output:hdfs://192.168.1.129/ylitech_demo/mr/keywordAsNullCount_output/
- * @author yz
+ * @author lzq
  */
 
 public class KeywordAsNullCountTest {

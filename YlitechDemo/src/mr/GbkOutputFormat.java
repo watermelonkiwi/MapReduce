@@ -54,14 +54,6 @@ public class GbkOutputFormat<K, V> extends FileOutputFormat<K, V> {
 			this(out, "\t");
 		}
 
-		/**
-		 * Write the object to the byte stream, handling Text as a special case.
-		 * 
-		 * @param o
-		 *            the object to print
-		 * @throws IOException
-		 *             if the write throws, we pass it on
-		 */
 		private void writeObject(Object o) throws IOException {
 			if (o instanceof Text) {
 				// Text to = (Text) o;

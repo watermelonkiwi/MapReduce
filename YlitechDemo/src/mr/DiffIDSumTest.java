@@ -20,7 +20,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
  * 统计不同的ID数量有多少
  * input:hdfs://192.168.1.129/ylitech_demo/mr/replaceString_output/
  * output:hdfs://192.168.1.129/ylitech_demo/mr/diffIDSum_output/
- * @author yz
+ * @author lzq
  *
  */
 public class DiffIDSumTest {

@@ -22,7 +22,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /**
  * 关键词出现次数排序，取前10
- * @author yz
+ * @author lzq
  *
  */
 public class KeywordSortAsCountTest {

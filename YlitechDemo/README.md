@@ -1,4 +1,4 @@
-# YlitechDemo（以利天诚中MR所有案例）
+YlitechDemo（以利天诚中MR所有案例）
 [MapReduce编程](http://124.232.152.147:8081/ylitech-bd/portal/coursePlay/2102078c9ad44ad39ca5b8414a93d214)
 
 ## GB18030格式转换成UTF8实践 （FormatUTF8Test.java）

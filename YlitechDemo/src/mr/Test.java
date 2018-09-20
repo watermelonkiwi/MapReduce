@@ -10,7 +10,7 @@ import java.util.Map.Entry;
 
 /**
  * HashMap的两种排序方式
- * @author yz
+ * @author lzq
  *
  */
 public class Test {

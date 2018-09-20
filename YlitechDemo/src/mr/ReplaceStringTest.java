@@ -15,7 +15,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /**
  * 将访问总量与关键词对应url之间的\号改为:号
- * @author yz
+ * @author lzq
  * input:hdfs://192.168.1.129/ylitech_demo/mr/formatUTF8_output/
  * output:hdfs://192.168.1.129/ylitech_demo/mr/replaceString_output/
 

@@ -17,7 +17,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
  * 关键词为gb18030格式，要求将日志所有内容修改为utf8格式
  * input:hdfs://192.168.1.129/ylitech_demo/mr/input/
  * output:hdfs://192.168.1.129/ylitech_demo/mr/formatUTF8_output/
- * @author yz
+ * @author lzq
  */
 
 public class FormatUTF8Test {

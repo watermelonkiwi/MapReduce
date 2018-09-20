@@ -20,7 +20,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
  * 对缺失字段填充默认值
  * 对记录标记valid和invalid
  * 
- * @author
+ * @author：lzq
  *
  */
 

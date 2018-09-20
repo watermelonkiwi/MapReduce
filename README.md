@@ -17,4 +17,3 @@
 爬取赶集网上济南所有租房信息，并统计结果
 
 
-[MapReduce编程](http://124.232.152.147:8081/ylitech-bd/portal/coursePlay/2102078c9ad44ad39ca5b8414a93d214)

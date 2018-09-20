@@ -14,20 +14,20 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /**
  * 
-1	Àú³Ç	120	2999
-2	ÌìÇÅ	75	1500
-3	ÊÐÖÐ	60	1800
-4	Àú³Ç	27	1200
-5	ÌìÇÅ	50	1200
-6	Àú³Ç	108	1980
-7	ÊÐÖÐ	60	2200
-8	Àú³Ç	70	2000
-9	»±Òñ	120	6800
-10	ÊÐÖÐ	60	1600
-11	»±Òñ	86	1800
-12	»±Òñ	121	2300
- * @author: yangzheng
- * @date: 2017Äê10ÔÂ26ÈÕ
+1	ï¿½ï¿½ï¿½ï¿½	120	2999
+2	ï¿½ï¿½ï¿½ï¿½	75	1500
+3	ï¿½ï¿½ï¿½ï¿½	60	1800
+4	ï¿½ï¿½ï¿½ï¿½	27	1200
+5	ï¿½ï¿½ï¿½ï¿½	50	1200
+6	ï¿½ï¿½ï¿½ï¿½	108	1980
+7	ï¿½ï¿½ï¿½ï¿½	60	2200
+8	ï¿½ï¿½ï¿½ï¿½	70	2000
+9	ï¿½ï¿½ï¿½ï¿½	120	6800
+10	ï¿½ï¿½ï¿½ï¿½	60	1600
+11	ï¿½ï¿½ï¿½ï¿½	86	1800
+12	ï¿½ï¿½ï¿½ï¿½	121	2300
+ * @author: lzq
+ * @date: 2017ï¿½ï¿½10ï¿½ï¿½26ï¿½ï¿½
  */
 
 public class JNInfo {
@@ -41,16 +41,16 @@ public class JNInfo {
 			String line = value.toString();
 			String[] fields = line.split("\t");
 			
-			String location;	//ÇøÃû
-			long area;	//Ãæ»ý
-			float price;	//¼Û¸ñ
-			float avprice;	//¾ù¼Û
-			long count;	//ÇøÓòµÄ³ö×âÎÝ×ÜÁ¿
+			String location;	//ï¿½ï¿½ï¿½ï¿½
+			long area;	//ï¿½ï¿½ï¿½
+			float price;	//ï¿½Û¸ï¿½
+			float avprice;	//ï¿½ï¿½ï¿½ï¿½
+			long count;	//ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			
-			if (fields.length == 4) {	//1	Àú³Ç	120	2999
+			if (fields.length == 4) {	//1	ï¿½ï¿½ï¿½ï¿½	120	2999
 				location = fields[1];
 				area = Long.parseLong(fields[2]);
-				if("ÃæÒé".equals(fields[3])) {
+				if("ï¿½ï¿½ï¿½ï¿½".equals(fields[3])) {
 					price = 0;
 				} else {
 					price = Float.parseFloat(fields[3]);
@@ -59,9 +59,9 @@ public class JNInfo {
 				count = 0;
 				
 			} else {	// 1		120	2999
-				location = "ÆäËü";
+				location = "ï¿½ï¿½ï¿½ï¿½";
 				area = Long.parseLong(fields[1]);
-				if("ÃæÒé".equals(fields[2])) {
+				if("ï¿½ï¿½ï¿½ï¿½".equals(fields[2])) {
 					price = 0;
 				} else {
 					price = Float.parseFloat(fields[2]);
@@ -80,13 +80,13 @@ public class JNInfo {
 		private DataBean v = new DataBean();
 		
 		//area + "\t" + price + "\t" + avprice + "\t" + count;
-		//Àú³Ç	area	price 0 0
+		//ï¿½ï¿½ï¿½ï¿½	area	price 0 0
 		@Override
 		protected void reduce(Text key, Iterable<DataBean> values, Context context) throws IOException, InterruptedException {
-			long sum_area = 0;	//Ãæ»ý
-			float sum_price = 0;	//¼Û¸ñ
-			float avprice;	//¾ù¼Û
-			long count = 0;	//ÇøÓòµÄ³ö×âÎÝ×ÜÁ¿
+			long sum_area = 0;	//ï¿½ï¿½ï¿½
+			float sum_price = 0;	//ï¿½Û¸ï¿½
+			float avprice;	//ï¿½ï¿½ï¿½ï¿½
+			long count = 0;	//ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			
 			for (DataBean value : values) {
 				if (value.getAvprice() > 10 && value.getAvprice() < 100) {
